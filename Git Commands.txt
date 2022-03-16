@@ -1,0 +1,46 @@
+$ git branch --list -> Listar branchs no repositório.
+$ git fetch --all ->  Recupera tudo que está no repositorio remoto, para o repositorp local
+$ git checkout desenv -> Troca de Branch
+$ git checkout -b wendres -> Cria um NOVO BRANCH com o nome determinado.
+$ git branch -m wendres_02 -> Renomeia o BRANCH
+$ git branch -D wendres_02 -> Deleta o BRANCH LOCAL, não pode estar no branch a ser deletado.
+$ git pull --force -> Atualiza o BRANCH que eu estou, com o REMOTO.
+$ git pull origin desenv -> Atualiza o BRANCH local, com o branch REMOTO.
+$ git status -> Mostra o status do BRANCH, se há conflito, se tem algo precisando dar merge...
+$ git add . -> Adiciona em uma stage area as alterações. NÃO USAR, SEMPRE VERIFICAR ANTES O QUE ESTÁ INDO.
+$ git restore --staged "Roccia/Relatorios/Impresso_Orcamento@Modelo02.fr3" -> Remove da stage area o arquivo informado.
+$ git commit -m "Mensagem do commit" -> Comando para comitar as alterações.
+$ git log -> Visualizar histórico de alterações. (Q para sair)
+$ git merge wendres -> Sincroniza wendres com desenv 
+$ git push origin desenv -> Sincroniza branch local com branch nuvem.
+$ git reset --hard origin/desenv >- Resetar o Branch local com base no branch remoto.
+
+Passos do merge
+git checkout desenv -> Trocar de branch pra desenv 
+git merge wendres -> Sincronização com o desenv.			
+
+
+Antes de mandar pra nuvem, eu pego o que está lá
+$ git pull --force -> Atualiza o BRANCH que eu estou, com o REMOTO.
+
+
+COMEÇAR O DIA DE DESENVOLVIMENTO 
+
+$ git fetch --all ->  Recupera tudo que está no repositorio remoto, para o repositorio local
+$ git checkout desenv -> Troca de Branch para o meu BRANCH
+$ git reset --hard origin/desenv >- Resetar o Branch local com base no branch remoto.
+
+Desenvolver.
+
+Ir para o diretório de projetos, abrir o TortoiseGit (botão direito do mouse) opção GitCommit.
+Nesse momento vão aparecer o campo de mensagem do commit e abaixo os arquivos que estão aguardando para serem commitados, lembrando que quando abrimos um formulário, o git entende que houve alteração nele. Para remove-los, selecionamos o formulario, botão direito e escolhemos a opção REVERT.
+
+Feito isso, vamos escrever a mensagem do commit e clicar no btn COMMIT. (opção do TortoiseGit)
+
+$ git commit -m "Mensagem do commit" -> Comando para comitar as alterações.(opção do terminal)
+
+$ git push origin desenv Depois do commit vamos mandar pro repositório em nuvem. 
+
+
+Teste Flavio
+
