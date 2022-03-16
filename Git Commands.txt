@@ -39,8 +39,14 @@ Feito isso, vamos escrever a mensagem do commit e clicar no btn COMMIT. (opção
 
 $ git commit -m "Mensagem do commit" -> Comando para comitar as alterações.(opção do terminal)
 
+
 $ git push origin desenv Depois do commit vamos mandar pro repositório em nuvem. 
 
 
-Teste Flavio 2
+$ git push origin desenv -> Depois do commit vamos mandar pro repositório em nuvem. 
+
+$ git push origin desenv Depois do commit vamos mandar pro repositório em nuvem. 
+
+
+
 
